@@ -1,0 +1,108 @@
+{
+	"dialogue": [
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "sad",
+			"text": "gosh it sure is lonely here in this greenhouse"
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "worry",
+			"text": "i wonder when Ill finally make a friend..."
+		},
+		{
+			"sound": "bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "-lmaoooo ok so and then i was-"
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "OMGG!!! hiiiiii!! -waves at you-"
+		},
+		{
+			"sound": "gf_dtext",
+			"speed": 0.05,
+			"portrait": "gf-im",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "oh um he wasnt talking to you"
+		},
+		{
+			"sound": "gf_dtext",
+			"speed": 0.05,
+			"portrait": "gf-im",
+			"boxState": "normal",
+			"expression": "suspect",
+			"text": "Wait.. who are you i havent seen you before"
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hiii wanna be my friends pleeeasde pllsee plelessseee"
+		},
+		{
+			"sound": "bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ummm"
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ":)"
+		},
+		{
+			"sound": "bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ummm "
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "<:)"
+		},
+		{
+			"sound": "bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "sure"
+		},
+		{
+			"sound": "pink_dtext",
+			"speed": 0.05,
+			"portrait": "pink",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "YIIPPEEEEEE!!!!!"
+		}
+	]
+}

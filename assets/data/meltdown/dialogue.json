@@ -1,0 +1,92 @@
+{
+	"dialogue": [
+		{
+			"sound": "Bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "OooOOoooOOh Im a gHoiOoStT"
+		},
+		{
+			"sound": "Gf_dtext",
+			"speed": 0.05,
+			"portrait": "gf-im",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "me too oooOooOh OooHoh"
+		},
+		{
+			"sound": "red_dtext",
+			"speed": 0.05,
+			"portrait": "red",
+			"boxState": "normal",
+			"expression": "nervous",
+			"text": "WTF UR SCARY"
+		},
+		{
+			"sound": "Gf_dtext",
+			"speed": 0.05,
+			"portrait": "gf-im",
+			"boxState": "normal",
+			"expression": "glint",
+			"text": "yea...>:)"
+		},
+		{
+			"sound": "Bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "what u gonna do BITCH!!!"
+		},
+		{
+			"sound": "red_dtext",
+			"speed": 0.05,
+			"portrait": "red",
+			"boxState": "normal",
+			"expression": "sad",
+			"text": "i...im so sorry.. please just.. dont hurt me.."
+		},
+		{
+			"sound": "red_dtext",
+			"speed": 0.05,
+			"portrait": "red",
+			"boxState": "normal",
+			"expression": "sad",
+			"text": "I have a wife and kids at home...."
+		},
+		{
+			"sound": "Bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "you know what... yeah man, lets just put our differences aside."
+		},
+		{
+			"sound": "Bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "mad",
+			"text": "...after you KILLED ME??? what kinda drugs you on???"
+		},
+		{
+			"sound": "red_dtext",
+			"speed": 0.05,
+			"portrait": "red",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "crack"
+		},
+		{
+			"sound": "Bf_dtext",
+			"speed": 0.05,
+			"portrait": "bf-im",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ah that makes sense"
+		}
+	]
+}

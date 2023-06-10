@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				636,
+				254
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "dead 0START",
+			"indices": []
+		},
+		{
+			"offsets": [
+				636,
+				-171
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "dead 2END"
+		},
+		{
+			"offsets": [
+				636,
+				-288
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "dead 1MID"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/MiraHQ/bfFly",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		500,
+		-100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

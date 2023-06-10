@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				345,
+				299
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				342,
+				299
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				255,
+				299
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				194,
+				307
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right ",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-1,
+				310
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle ",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Skeld/black-monotone",
+	"position": [
+		20,
+		145
+	],
+	"healthicon": "black-m",
+	"flip_x": false,
+	"healthbar_colors": [
+		40,
+		0,
+		60
+	],
+	"camera_position": [
+		-270,
+		-240
+	],
+	"sing_duration": 3.50000000000001,
+	"scale": 1
+}
