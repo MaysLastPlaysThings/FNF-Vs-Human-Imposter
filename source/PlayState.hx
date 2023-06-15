@@ -1074,7 +1074,7 @@ class PlayState extends MusicBeatState
 		//Application.current.window.alert('all done', 'hi');
 	}
 
-	/*#if (!flash && desktop)
+	#if (!flash && sys)
 	public var runtimeShaders:Map<String, Array<String>> = new Map<String, Array<String>>();
 	public function createRuntimeShader(name:String):FlxRuntimeShader
 	{
@@ -1095,7 +1095,7 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	public function initLuaShader(name:String, ?glslVersion:Int = 120)
+	public function initLuaShader(name:String, ?glslVersion:Int = 100)
 	{
 		if(!ClientPrefs.shaders) return false;
 
@@ -1144,7 +1144,7 @@ class PlayState extends MusicBeatState
 		FlxG.log.warn('Missing shader $name .frag AND .vert files!');
 		return false;
 	}
-	#end*/
+	#end
 
 	function set_songSpeed(value:Float):Float
 	{
