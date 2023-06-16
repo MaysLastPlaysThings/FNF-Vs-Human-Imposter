@@ -58,9 +58,6 @@ function onCreate()
 end
 
 function onBeatHit()
-    if curBeat % 1 == 0 then
-	playAnim('deadgf','loop', true);
-	end
 	if curBeat % 2 == 0 then
 	  if beating == true then
 	  triggerEvent('Add Camera Zoom', 0.02, 0.02)
@@ -137,15 +134,15 @@ end
 function cuton()
     doTweenY('CSUPY', 'csup', 0, 1, 'CircInOut');
     doTweenY('SCDOWNY', 'csdown', 0, 1, 'CircInOut');
-	setProperty('healthBar.alpha', tonumber(0))
-    setProperty('iconP1.alpha', tonumber(0))
-    setProperty('iconP2.alpha', tonumber(0))
+	setProperty('healthBar.alpha', 0)
+    setProperty('iconP1.alpha', 0)
+    setProperty('iconP2.alpha', 0)
 end
 
 function cutoff()
     doTweenY('CSUPYend', 'csup', -100, 1, 'CircInOut');
     doTweenY('SCDOWNYend', 'csdown', 100, 1, 'CircInOut');
-	setProperty('healthBar.alpha', tonumber(1))
-    setProperty('iconP1.alpha', tonumber(1))
-    setProperty('iconP2.alpha', tonumber(1))
+	setProperty('healthBar.alpha', 1)
+    setProperty('iconP1.alpha', 1)
+    setProperty('iconP2.alpha', 1)
 end
