@@ -42,9 +42,13 @@ class Main extends Sprite
 
 	public static var fpsVar:FPS;
 	
-        public static var path:String = lime.system.System.applicationStorageDirectory;
+  public static var path:String = lime.system.System.applicationStorageDirectory;
 	
 	// You can pretty much ignore everything from here on - your code should go in your states.
+
+	static final losvideos:Array<String> = [
+		"meltdown",
+	];
 
 	public static function main():Void
 	{
@@ -89,6 +93,18 @@ class Main extends Sprite
 			game.zoom = Math.min(ratioX, ratioY);
 			game.width = Math.ceil(stageWidth / game.zoom);
 			game.height = Math.ceil(stageHeight / game.zoom);
+		}
+
+		Generic.mode = ROOTDATA;
+		if (!FileSystem.exists(Generic.returnPath() + 'assets')) {
+			FileSystem.createDirectory(Generic.returnPath() + 'assets');
+		}
+		if (!FileSystem.exists(Generic.returnPath() + 'assets/videos')) {
+			FileSystem.createDirectory(Generic.returnPath() + 'assets/videos');
+		}
+
+    for (video in losvideos) {
+		Generic.copyContent(Paths._video(video), Paths._video(video));
 		}
 	
 		ClientPrefs.loadDefaultKeys();
