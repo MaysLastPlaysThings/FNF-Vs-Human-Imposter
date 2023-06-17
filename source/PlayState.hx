@@ -532,7 +532,7 @@ class PlayState extends MusicBeatState
 		if (OpenFlAssets.exists(luaFile))
 		{
 		  doPush = true;
-		} else /*{
+		} /*else {
 		Application.current.window.alert(luaFile, 'NOT FOUND :C');
 		}*/
 			
@@ -555,7 +555,7 @@ class PlayState extends MusicBeatState
 		if (OpenFlAssets.exists(luaFile))
 		{
 			doPush = true;
-		} else /*{
+		} /*else {
 		Application.current.window.alert(luaFile, 'NOT FOUND :C');  
 		}*/
 			
@@ -845,13 +845,13 @@ class PlayState extends MusicBeatState
 		//Application.current.window.alert('Loading songs lua', 'hi');
 		#if LUA_ALLOWED
 		//NORMAL SCRIPTS
-		var doPush:Bool = false;
+		var :Bool = false;
 		var luaFile = Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/script.lua');
 		if (OpenFlAssets.exists(luaFile))
 		{
 			doPush = true;
-		} else /*{
-		Application.current.window.alert(luaFile, 'NOT FOUND :C');  
+		} /*else {
+		Application.current.window.alert(luaFile, ' :C');  
 		}*/
 			
 		if(doPush) 
@@ -866,8 +866,8 @@ class PlayState extends MusicBeatState
 		if (OpenFlAssets.exists(luaFile2))
 		{
 			doPush = true;
-		} else /*{
-		Application.current.window.alert(luaFile2, 'NOT FOUND :C');  
+		} /*else {
+		Application.current.window.alert(luaFile2, ' :C');  
 		}*/
 			
 		if(doPush) 
@@ -882,8 +882,8 @@ class PlayState extends MusicBeatState
 		if (OpenFlAssets.exists(luaFile2))
 		{
 			doPush = true;
-		} else /*{
-		Application.current.window.alert(luaFile2, 'NOT FOUND :C');  
+		} /*else {
+		Application.current.window.alert(luaFile2, ' :C');  
 		}*/
 			
 		if(doPush) 
@@ -898,7 +898,7 @@ class PlayState extends MusicBeatState
 		if (OpenFlAssets.exists(luaFile2))
 		{
 			doPush = true;
-		} else /*{
+		} /*else {
 		Application.current.window.alert(luaFile2, 'NOT FOUND :C');  
 		}*/
 			
