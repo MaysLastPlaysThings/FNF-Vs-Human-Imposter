@@ -303,7 +303,7 @@ class PlayState extends MusicBeatState
 	var chromEnabled:Bool = true;
 	public var chromMinimum:Float = 0;
 
-	var caShaderhromaticAbberation;
+	var caShader:ChromaticAbberation;
 	var heatwaveShader:HeatwaveShader;
 
 	var precacheList:Map<String, String> = new Map<String, String>();
