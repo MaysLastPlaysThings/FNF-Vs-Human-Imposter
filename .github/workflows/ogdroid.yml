@@ -52,7 +52,7 @@ jobs:
           haxelib install tjson
           haxelib install hxjsonast
           haxelib install hxCodec
-          haxelib git linc_luajit https://github.com/Aly-Ant0/linc_luajit.git
+          haxelib git linc_luajit https://github.com/Sirox228/linc_luajit.git
           haxelib install hscript 2.5.0
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git extension-androidtools https://github.com/Default-name123/oldtools.git
