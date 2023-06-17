@@ -303,7 +303,7 @@ class PlayState extends MusicBeatState
 	var chromEnabled:Bool = true;
 	public var chromMinimum:Float = 0;
 
-	var caShader:ChromaticAbberation;
+	var caShaderhromaticAbberation;
 	var heatwaveShader:HeatwaveShader;
 
 	var precacheList:Map<String, String> = new Map<String, String>();
@@ -851,7 +851,7 @@ class PlayState extends MusicBeatState
 		{
 			doPush = true;
 		} /*else {
-		Application.current.window.alert(luaFile, ' :C');  
+		Application.current.window.alert(luaFile, 'NOT FOUND :C');  
 		}*/
 			
 		if(doPush) 
@@ -867,7 +867,7 @@ class PlayState extends MusicBeatState
 		{
 			doPush = true;
 		} /*else {
-		Application.current.window.alert(luaFile2, ' :C');  
+		Application.current.window.alert(luaFile2, 'NOT FOUND :C');  
 		}*/
 			
 		if(doPush) 
@@ -883,7 +883,7 @@ class PlayState extends MusicBeatState
 		{
 			doPush = true;
 		} /*else {
-		Application.current.window.alert(luaFile2, ' :C');  
+		Application.current.window.alert(luaFile2, 'NOT FOUND :C ');  
 		}*/
 			
 		if(doPush) 
