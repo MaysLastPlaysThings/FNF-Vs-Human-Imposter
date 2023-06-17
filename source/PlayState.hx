@@ -845,7 +845,7 @@ class PlayState extends MusicBeatState
 		//Application.current.window.alert('Loading songs lua', 'hi');
 		#if LUA_ALLOWED
 		//NORMAL SCRIPTS
-		var :Bool = false;
+		var doPush:Bool = false;
 		var luaFile = Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/script.lua');
 		if (OpenFlAssets.exists(luaFile))
 		{
