@@ -111,11 +111,6 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 	{
 		super();
 
-   #if mobile
-   addVirtualPad(LEFT_FULL, A_B_C);
-   addVirtualPadCamera(false);
-   #end
-
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		bg.alpha = 0.6;
 		add(bg);
@@ -165,6 +160,11 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 		changeSelection();
 		reloadCheckboxes();
+
+   #if mobile
+   addVirtualPad(LEFT_FULL, A_B_C);
+   addVirtualPadCamera(false);
+   #end
 	}
 
 	var nextAccept:Int = 5;
@@ -182,7 +182,11 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 
 		if (controls.BACK) {
+		  #if desktop
 			close();
+			#else
+			FlxG.resetState();
+			#end
 			ClientPrefs.saveSettings();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
