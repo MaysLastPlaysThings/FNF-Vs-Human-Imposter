@@ -13,7 +13,7 @@ local HPDrain = false;
 function onCreate()
 	addCharacterToList('BF_Dead', 'boyfriend')
 
-	if songName == 'Ashes' or songName == 'Magmatic' then
+	if songName == 'Ashes' or songName == 'Magmatic' or songName == 'Assassin' then
 		makeLuaSprite('Sky','Polus/Maroon/OnLand/newsky', -1500, 50)
 		addLuaSprite('Sky')
 		
