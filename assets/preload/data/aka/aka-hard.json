@@ -7222,12 +7222,12 @@
 				]
 			]
 		],
-		"player2": "red",
+		"player2": "Red",
 		"splashSkin": "AuraSplashes",
 		"song": "aka",
 		"needsVoices": true,
 		"arrowSkin": "",
-		"stage": "maroon",
+		"stage": "Polus_Red",
 		"validScore": true,
 		"bpm": 205,
 		"speed": 2.8
