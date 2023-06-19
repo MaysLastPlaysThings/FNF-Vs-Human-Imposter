@@ -125,7 +125,7 @@ function onStepHit()
 	end
    end
    if curStep == 4217 then
-   flash();
+   flash()
    setProperty('camHUD.visible', true);
    setProperty('flash.alpha', 0);
    end
