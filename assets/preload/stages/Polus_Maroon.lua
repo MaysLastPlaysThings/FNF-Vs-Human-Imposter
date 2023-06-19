@@ -13,7 +13,7 @@ local HPDrain = false;
 function onCreate()
 	addCharacterToList('BF_Dead', 'boyfriend')
 
-	if songName == 'Ashes' or songName == 'Magmatic' or songName == 'Assassin' then
+	if songName == 'Ashes' or songName == 'Magmatic' or songName == 'assassin' then
 		makeLuaSprite('Sky','Polus/Maroon/OnLand/newsky', -1500, 50)
 		addLuaSprite('Sky')
 		
@@ -59,7 +59,7 @@ function onCreate()
 		addLuaSprite('LightOverlay', true)
 	end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if songName == 'Boiling Point' then
+	if songName == 'Boiling Point' or songName = 'boiling-point-v2' then
 		makeAnimatedLuaSprite('wall','Polus/Maroon/InVolcano/wallBP', -2900, -100)
 		addAnimationByPrefix('wall','loop','Back wall and lava',24,true)
 		scaleObject('wall', 1.4, 1.3)
