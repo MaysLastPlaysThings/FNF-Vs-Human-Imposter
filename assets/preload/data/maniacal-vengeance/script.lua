@@ -101,6 +101,7 @@ function onStepHit()
    doTweenAlpha('cutscenefade2', 'flash', 1, 3, 'linear');
    end
    if curStep == 4200 then
+   setProperty('camHUD.visible', true);
    triggerEvent('Change Character', 0, 'yellowghost');
    triggerEvent('Change Character', 1, '1stpink');
    setCharacterX('bf', -400);
@@ -124,7 +125,8 @@ function onStepHit()
 	end
    end
    if curStep == 4217 then
-   flash()
+   flash();
+   setProperty('camHUD.visible', true);
    setProperty('flash.alpha', 0);
    end
    if curStep == 256 or curStep == 512 then
