@@ -59,7 +59,7 @@ function onCreate()
 		addLuaSprite('LightOverlay', true)
 	end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if songName == 'Boiling Point' or songName = 'boiling-point-v2' then
+	if songName == 'Boiling Point' then
 		makeAnimatedLuaSprite('wall','Polus/Maroon/InVolcano/wallBP', -2900, -100)
 		addAnimationByPrefix('wall','loop','Back wall and lava',24,true)
 		scaleObject('wall', 1.4, 1.3)
