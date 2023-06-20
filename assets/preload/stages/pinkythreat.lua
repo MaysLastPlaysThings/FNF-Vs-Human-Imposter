@@ -21,18 +21,18 @@ end
 function onCreate()
 	--background boi
 	makeLuaSprite('bg','BG/pinkythreat/bg', -1600, 100)
-	makeLuaSprite('OV','BG/grey/overlay', -500, -1000)
+--	makeLuaSprite('OV','BG/grey/overlay', -500, -1000)
 	makeLuaSprite('DarkSC','DarkSC', 0, 0)
     addLuaSprite('bg')
-	addLuaSprite('OV', true)
+--	addLuaSprite('OV', true)
 	addLuaSprite('DarkSC', true)
 	
-	setBlendMode('OV', 'MULTIPLY')
-	setProperty('OV.alpha', 1);
+	--[[setBlendMode('OV', 'MULTIPLY')
+	setProperty('OV.alpha', 1);]]
 	
 	setObjectCamera('DarkSC', 'other');
 	setProperty('DarkSC.alpha', 0.75);
-	setObjectCamera('OV', 'other');
+	--setObjectCamera('OV', 'other');
 end
 
 function onUpdate(elapsed)
