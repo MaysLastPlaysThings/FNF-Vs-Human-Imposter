@@ -8486,7 +8486,7 @@
 		"arrowSkin": "",
 		"validScore": true,
 		"needsVoices": true,
-		"stage": "Polus_Maroon",
+		"stage": "maroon",
 		"speed": 2.8,
 		"bpm": 160
 	}
