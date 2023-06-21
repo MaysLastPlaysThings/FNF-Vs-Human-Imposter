@@ -930,7 +930,7 @@ class PlayState extends MusicBeatState
 				case "magmatic":
 					startDialogue(dialogueJson, null, 'magmatic');
 				case "delusion":
-					startDialogue(dialogueJson, null, 'delusion');
+					startDialogue(dialogueJson, null, null);
 				case "heartbeat":
 					startDialogue(dialogueJson, null, 'heartbeat');
 				case "pinkwave":
