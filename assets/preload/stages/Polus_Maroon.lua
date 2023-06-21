@@ -189,7 +189,7 @@ function onStepHit()
 		end
 	end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if songName == '' then
+	if songName == 'Boiling Point' then
 		if curStep == 1824 then --1824
 			setProperty('losingValue', 60)
 		end
