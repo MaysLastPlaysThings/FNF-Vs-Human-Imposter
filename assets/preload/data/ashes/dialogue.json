@@ -1,7 +1,7 @@
 {
 	"dialogue": [
 		{
-			"sound": "Imp_dtext",
+			"sound": "imp_dtext",
 			"speed": 0.05,
 			"portrait": "maroon",
 			"boxState": "normal",
@@ -17,7 +17,7 @@
 			"text": "i havent even said anything what the hell"
 		},
 		{
-			"sound": "Imp_dtext",
+			"sound": "imp_dtext",
 			"speed": 0.05,
 			"portrait": "maroon",
 			"boxState": "normal",
@@ -33,7 +33,7 @@
 			"text": "Be nice to my boyfriend please."
 		},
 		{
-			"sound": "Imp_dtext",
+			"sound": "imp_dtext",
 			"speed": 0.05,
 			"portrait": "maroon",
 			"boxState": "normal",
@@ -49,7 +49,7 @@
 			"text": "holy shit youre already annoying"
 		},
 		{
-			"sound": "Imp_dtext",
+			"sound": "imp_dtext",
 			"speed": 0.05,
 			"portrait": "maroon",
 			"boxState": "normal",
@@ -65,7 +65,7 @@
 			"text": "will it make you leave us alone"
 		},
 		{
-			"sound": "Imp_dtext",
+			"sound": "imp_dtext",
 			"speed": 0.05,
 			"portrait": "maroon",
 			"boxState": "normal",
