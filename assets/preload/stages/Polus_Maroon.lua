@@ -59,7 +59,7 @@ function onCreate()
 		addLuaSprite('LightOverlay', true)
 	end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if songName == 'Boiling Point' then
+	if songName == 'Boiling Point' and songName == 'boiling-point-v2' then
 		makeAnimatedLuaSprite('wall','Polus/Maroon/InVolcano/wallBP', -2900, -100)
 		addAnimationByPrefix('wall','loop','Back wall and lava',24,true)
 		scaleObject('wall', 1.4, 1.3)
@@ -105,7 +105,7 @@ function onCreate()
 end
 
 function onCreatePost()
-	if songName == "Boiling Point" then
+	if songName == "Boiling Point" and songName == 'boiling-point-v2' then
 		setProperty('defaultCamZoom', 0.65)
 		setProperty('dad.x', -650)
 		setProperty('dad.y', 1000)
@@ -132,7 +132,7 @@ function flash(flashType, startAlpha, fadeTimer)
 			triggerEvent('Add Camera Zoom', 0.035, 0.06)
 			playSound('Alarm', 0.3)
 		end
-	elseif songName == 'Boiling Point' then
+	elseif songName == 'Boiling Point' and songName == 'boiling-point-v2' then
 		if flashType == "Red" and flashingLights then
 			setProperty('RedFlash_Above.alpha', startAlpha)
 			doTweenAlpha('RedFlash_AboveBye', 'RedFlash_Above', 0, fadeTimer, 'sineInOut')
@@ -149,7 +149,7 @@ function midCam(bool)
 			xx = 100; 	xx2 = 400;	yy = 1345; 	yy2 = 1370;	CZoom = 0.72;	CZoom1 = 0.85;
 		end
 	end
-	if songName == 'Boiling Point' then
+	if songName == 'Boiling Point' and songName == 'boiling-point-v2' then
 		if bool then
 			xx = 100;	xx2 = 100;	yy = 1190;	yy2 = 1190;	CZoom = 0.57;	CZoom1 = 0.57;
 		elseif not bool then
@@ -189,7 +189,7 @@ function onStepHit()
 		end
 	end
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if songName == 'Boiling Point' then
+	if songName == '' then
 		if curStep == 1824 then --1824
 			setProperty('losingValue', 60)
 		end
@@ -413,7 +413,7 @@ function opponentNoteHit(id, direction, noteType, isSustainNote)
 		doTweenZoom('CamGameCoolZoomy', 'camGame', 0.65, 0.65, 'sineInOut')
 	end
 	
-	if songName == "Boiling Point" then
+	if songName == "Boiling Point" and songName == 'boiling-point-v2' then
 		triggerEvent('Add Camera Zoom', 0.02, 0.02)
 		cameraShake('camGame', 0.009, 0.1); --Intensity, Duration
 		cameraShake('hud', 0.002, 0.1)
