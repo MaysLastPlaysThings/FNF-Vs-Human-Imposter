@@ -18,6 +18,42 @@ function onCreatePost()
 end
 
 function onCreate()
+		makeAnimatedLuaSprite('wall','Polus/Maroon/InVolcano/wallBP', -2900, -100)
+		addAnimationByPrefix('wall','loop','Back wall and lava',24,true)
+		scaleObject('wall', 1.4, 1.3)
+		addLuaSprite('wall')
+		
+		makeAnimatedLuaSprite('bubb','Polus/Maroon/InVolcano/bubbles', -1000, 1800)
+		addAnimationByPrefix('bubb','loop','Lava Bubbles',24,true)
+		scaleObject('bubb', 1.3, 1.3)
+		addLuaSprite('bubb')
+		
+		makeLuaSprite('floor','Polus/Maroon/InVolcano/platform', -950, 1525)
+		scaleObject('floor', 1.5, 2)
+		addLuaSprite('floor')
+		
+		makeLuaSprite('OrangeGlow', 'Polus/Maroon/InVolcano/OrangeGlowOverlay', -1280, 420)
+		setBlendMode('OrangeGlow', 'ADD')
+		setProperty('OrangeGlow.alpha', 0.1)
+		scaleObject('OrangeGlow', 2, 2)
+		addLuaSprite('OrangeGlow', true)
+			
+		makeLuaSprite('Overlay', 'Polus/Maroon/InVolcano/overlaythjing', -1350, 300)
+		setBlendMode('Overlay', 'ADD')
+		scaleObject('Overlay', 2, 2)
+		addLuaSprite('Overlay', true)
+	
+	makeLuaSprite('RedFlash', '', 0, 0)
+	makeGraphic('RedFlash', 1300, 750, 'FF1000')
+	setObjectCamera('RedFlash','hud')
+	setProperty('RedFlash.alpha', 0.0001)
+	addLuaSprite('RedFlash', true)
+	
+	makeLuaSprite('RedFlash_Above', 'Polus/Maroon/InVolcano/RedFlash_Above', -1400, 400)
+	setProperty('RedFlash_Above.alpha', 0.0001)
+	scaleObject('RedFlash_Above', 1.47, 1.1)
+	addLuaSprite('RedFlash_Above', true)
+
     makeLuaSprite('red','redbg', 0, 0)
 	makeLuaSprite('flash','Flash', 0, 0)
 	makeLuaSprite('flashwhite','flashwhite', 0, 0)
