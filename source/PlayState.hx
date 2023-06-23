@@ -860,7 +860,7 @@ class PlayState extends MusicBeatState
 			
   	//Maniacal-vengeance scripts
   	//Application.current.window.alert('Maniacal-vengeance scripts', 'hi');
-  	if(Paths.formatToSongPath(SONG.song) == 'Maniacal-vengeance'){
+  	if(Paths.formatToSongPath(SONG.song) == 'maniacal-vengeance'){
 		var doPush:Bool = false;
 		var luaFile2 = Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/subtitle.lua');
 		if (OpenFlAssets.exists(luaFile2))
