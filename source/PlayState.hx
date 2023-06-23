@@ -889,24 +889,6 @@ class PlayState extends MusicBeatState
 		if(doPush) 
 			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile2)));
   	}
-			
-		//Magmatic Scripts
-		//Application.current.window.alert('magamatic scripts', 'hi');
-		if(Paths.formatToSongPath(SONG.song) == 'magmatic'){
-		var doPush:Bool = false;
-		var luaFile2 = Paths.getPreloadPath('data/' + Paths.formatToSongPath(SONG.song) + '/dialogues.lua');
-		if (OpenFlAssets.exists(luaFile2))
-		{
-			doPush = true;
-		} /*else {
-		Application.current.window.alert(luaFile2, 'NOT FOUND :C');  
-		}*/
-			
-		if(doPush) 
-			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile2)));
-		}
-			
-		
 		#end
 		//very long but it works 
     //Application.current.window.alert('loading dialogues', 'hi');
