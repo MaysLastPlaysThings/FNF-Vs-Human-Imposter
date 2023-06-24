@@ -9,8 +9,7 @@ local del = 0;
 local del2 = 0;
 local dadzoom = 0.65;
 local bfzoom = 0.8;
-
-
+local HPDrain = false;
 local beating = false;
 
 function onCreatePost()
@@ -42,7 +41,8 @@ function onCreate()
 		setBlendMode('Overlay', 'ADD')
 		scaleObject('Overlay', 2, 2)
 		addLuaSprite('Overlay', true)
-	
+   HPDrain = true;
+
 	makeLuaSprite('RedFlash', '', 0, 0)
 	makeGraphic('RedFlash', 1300, 750, 'FF1000')
 	setObjectCamera('RedFlash','hud')
@@ -235,4 +235,11 @@ end
 
 function opponentNoteHit()
     triggerEvent('Screen Shake','0.01, 0.01','0.1, 0.0075');
+
+		if HPDrain and not isSustainNote then
+			setProperty('health', getProperty('health')-0.02*getProperty('health'))
+
+		elseif HPDrain and isSustainNote then
+			setProperty('health', getProperty('health')-0.008*getProperty('health'))
+		end
     end
