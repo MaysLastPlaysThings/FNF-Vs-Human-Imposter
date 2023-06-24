@@ -81,6 +81,12 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+      ['Android Port'],
+			['MaysLastPlay',		'MaysLastPlay',		'le Trollge',							'https://www.youtube.com/channel/UCx0LxtFR8ROd9sFAq-UxDfw',	'5DE7FF']
+      ['MarioMaster',		    'mariomaster',		    'hola de nuevo',	 'https://www.youtube.com/c/MarioMaster1997',	'D10616'],
+       ['FNF BR',		    'fnf-br',		    '',	 'https://www.youtube.com/c/FNF-BR',	'3E813A'],
+      ['Impostars Team'],
+      ['The Gamebanana credit', 'Check The Gamebanana credit' 'https://gamebanana.com/mods/448240', 'FF0000']
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],
