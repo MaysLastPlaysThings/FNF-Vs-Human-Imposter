@@ -84,7 +84,7 @@ class CreditsState extends MusicBeatState
       ['Android Port'],
 			['MaysLastPlay',		'MaysLastPlay',		'le Trollge',							'https://www.youtube.com/channel/UCx0LxtFR8ROd9sFAq-UxDfw',	'5DE7FF'],
       ['MarioMaster',		    'mariomaster',		    'hola de nuevo',	 'https://www.youtube.com/c/MarioMaster1997',	'D10616'],
-       ['FNF BR',		    'fnf-br',		    '',	 'https://www.youtube.com/c/FNF-BR',	'3E813A']
+       ['FNF BR',		    'fnf-br',		    '',	 'https://youtube.com/@FNF-BR',	'3E813A']
       ['Impostars Team'],
       ['The Gamebanana credit', 'Check The Gamebanana credit' 'https://gamebanana.com/mods/448240', 'FF0000']
 			['Psych Engine Team'],
