@@ -17,7 +17,7 @@ function onCreatePost()
 	setProperty('gf.alpha', 0);
 	setProperty('OppSplash', false);
 	
-	addCharacterToList('grey')
+	addCharacterToList('Grey')
 end
 
 function onCreate()
@@ -149,7 +149,7 @@ function onStepHit()
     xx2 = 200; --1500
     yy2 = 1000;
 	ofs = 15;
-    triggerEvent('Change Character', 1, 'grey');
+    triggerEvent('Change Character', 1, 'Grey');
 	setCharacterX('dad', -650);
 	setCharacterY('dad', 725);
 	setCharacterX('bf', 300);
@@ -169,7 +169,7 @@ function onStepHit()
 	ofs = 35;
 	setProperty('camFollowPos.x',xx)
     setProperty('camFollowPos.y',yy)
-    triggerEvent('Change Character', 1, '1stgrey');
+    triggerEvent('Change Character', 1, '1st');
 	setCharacterX('dad', -600);
 	setCharacterY('dad', 1050);
     setProperty('floor.alpha', 0);
