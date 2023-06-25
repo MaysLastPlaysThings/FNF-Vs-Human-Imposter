@@ -169,7 +169,7 @@ function onStepHit()
 	ofs = 35;
 	setProperty('camFollowPos.x',xx)
     setProperty('camFollowPos.y',yy)
-    triggerEvent('Change Character', 1, '1st');
+    triggerEvent('Change Character', 1, '1stgrey');
 	setCharacterX('dad', -600);
 	setCharacterY('dad', 1050);
     setProperty('floor.alpha', 0);
