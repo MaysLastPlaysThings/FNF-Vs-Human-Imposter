@@ -87,7 +87,7 @@ class CreditsState extends MusicBeatState
        ['FNF BR',		    'fnf-br',		    '',	 'https://youtube.com/@FNF-BR',	'3E813A'],
 			[''],
       ['Impostars Team'],
-      ['The Gamebanana credit', 'Check The Gamebanana credit', 'https://gamebanana.com/mods/448240', 'FF0000'],
+      ['The Gamebanana credit', 'Check The Gamebanana credit', 'https://gamebanana.com/mods/448240', 'CF2D2D'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
