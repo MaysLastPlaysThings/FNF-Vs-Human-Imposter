@@ -92,6 +92,7 @@ class NotesSubState extends MusicBeatSubstate
 
    #if mobile
    addVirtualPad(UP_DOWN, A_B_C);
+   addVirtualPadCamera(false);
    #end
 	}
 
