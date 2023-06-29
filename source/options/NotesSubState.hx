@@ -181,7 +181,7 @@ class NotesSubState extends MusicBeatSubstate
 			  #if desktop
 				close();
 				#else
-        LoadingState.loadAndSwitchState(new options.OptionsState());
+        FlxG.resetState();
 				#end
 			} else {
 				changeSelection();
