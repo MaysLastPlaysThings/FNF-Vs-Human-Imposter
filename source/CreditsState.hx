@@ -86,6 +86,7 @@ class CreditsState extends MusicBeatState
       ['MarioMaster',		    'mariomaster',		    'hola de nuevo',	 'https://www.youtube.com/c/MarioMaster1997',	'D10616'],
        ['FNF BR',		    'fnf-br',		    '',	 'https://youtube.com/@FNF-BR',	'3E813A'],
 			['Ralsei',		'ralsei',		'Fluffy Smol',						'https://youtube.com/@ralsei.smol03',	'4dcc8e'],
+			['EmirPlays',		'Emir',		'help with making this port official',							'https://www.youtube.com/channel/UCx0LxtFR8ROd9sFAq-UxDfw',	'5DE7FF'],
 			[''],
       ['Impostars Team'],
       ['The Gamebanana credit', 'Check The Gamebanana credit', 'https://gamebanana.com/mods/448240', 'CF2D2D'],
