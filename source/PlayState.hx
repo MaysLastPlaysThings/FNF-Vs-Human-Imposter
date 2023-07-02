@@ -90,6 +90,9 @@ using StringTools;
 
 class PlayState extends MusicBeatState
 {
+	//[MOBILE VAR]
+	public var allowControls:Bool = false;
+	
 	public static var STRUM_X = 42;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
@@ -796,13 +799,12 @@ class PlayState extends MusicBeatState
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
 
-   //Application.current.window.alert('adding android controls', 'hi');
-   #if mobile
-   addMobileControls(false);
-   mobileControls.visible = false;
-   #end
-   //Application.current.window.alert('android controls done', 'hi');
-
+		//Application.current.window.alert('adding android controls', 'hi');
+		#if mobile
+			addMobileControls(false);
+			mobileControls.visible = false;
+		#end
+		//Application.current.window.alert('android controls done', 'hi');
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
 		// UI_camera.zoom = 1;
@@ -1409,10 +1411,15 @@ class PlayState extends MusicBeatState
 
 	public function startCountdown():Void
 	{
-   #if mobile
-   mobileControls.visible = true;
-   #end
-
+		#if mobile
+			if (SONG.song != 'Defeat') {
+				mobileControls.visible = true;
+			}
+		//[ADDITIONS]
+			if (SONG.song == 'Defeat' && allowControls) {
+				mobileControls.visible = true;
+			} //[SEPARATED BECAUSE I WANT AN UNDERSTANDABLE LINE]
+		#end
 		if(startedCountdown) {
 			callOnLuas('onStartCountdown', []);
 			return;
@@ -2981,10 +2988,9 @@ class PlayState extends MusicBeatState
 	public var transitioning = false;
 	public function endSong():Void
 	{
-
-   #if mobile
-   mobileControls.visible = false;
-   #end
+		#if mobile
+			mobileControls.visible = false;
+		#end
 
 		//Should kill you if you tried to cheat
 		if(!startingSong) {
