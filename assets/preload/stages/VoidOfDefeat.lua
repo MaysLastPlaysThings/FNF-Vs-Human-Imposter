@@ -1088,9 +1088,6 @@ function onTweenCompleted(tag)
 		runTimer('Continue', 3.5)
 	end
 	if tag == 'TypeLineAlphaGone' and StartState == 2 then
-		runHaxeCode([[
-			game.allowControls = true;
-		]])
 		allowCountdown = true;
 		startCountdown();
 		doTweenAlpha('BlackScreenAlpha', 'BlackScreen', 0, 1.5)
