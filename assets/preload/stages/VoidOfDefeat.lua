@@ -347,8 +347,8 @@ function onStepHit()
 			doTweenAlpha('BlackScreenAlpha', 'BlackScreen', 1, 7, 'sineInOut')
 		end
 		if curStep == 1152 then
-			triggerEvent('Change Character', '0', 'BF_Defeat')
-			triggerEvent('Change Character', '1', 'Black')
+			triggerEvent('Change Character', '0', 'bf')
+			triggerEvent('Change Character', '1', 'blackold')
 			
 			setProperty('timeBar.alpha', 0)
 			setProperty('timeTxt.alpha', 0)
