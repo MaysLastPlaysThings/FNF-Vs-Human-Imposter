@@ -105,6 +105,7 @@ function onCreate()
 	addCharacterToList('BF_Defeat', 'boyfriend')
 	addCharacterToList('BF_DefeatDeath', 'boyfriend')
 	addCharacterToList('BF_DefeatDeath_Balls', 'boyfriend')
+	addCharacterToList('blackold', 'dad')
 	
 	if songName == 'Defeat' then
 		setPropertyFromClass('PauseSubState', 'songName', 'blackPause');
