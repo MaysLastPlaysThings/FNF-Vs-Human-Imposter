@@ -584,7 +584,7 @@ function onUpdate(elapsed)
 		mobileControls('tweenHUD')
 		runTimer('controlS', 3.5)
 		
-		debugPrint('TIMER STARTED.')
+	--	debugPrint('TIMER STARTED.')
 -------------------------------------------------------------
 	end
 	if StartState == 1 and getProperty('WhiteLine.alpha') == 1 then
