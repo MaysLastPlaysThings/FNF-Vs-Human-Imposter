@@ -1412,14 +1412,14 @@ class PlayState extends MusicBeatState
 	public function startCountdown():Void
 	{
 		#if mobile
-			/*if (SONG.song != 'Defeat') {
+			if (SONG.song != 'Defeat') {
 				mobileControls.visible = true;
 			}
 		//[ADDITIONS]
 			if (SONG.song == 'Defeat' && allowControls) {
 				mobileControls.visible = true;
-			} //[SEPARATED BECAUSE I WANT AN UNDERSTANDABLE LINE]*/
-			mobileControls.visible = true;
+			} //[SEPARATED BECAUSE I WANT AN UNDERSTANDABLE LINE]
+			//mobileControls.visible = true;
 		#end
 		if(startedCountdown) {
 			callOnLuas('onStartCountdown', []);
