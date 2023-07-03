@@ -1,3 +1,20 @@
+--[MOBILE STUFF MADE BY RALSEIIIII AAAA]
+local oneTimeTrig = true;
+local mobilePad = {
+	x = 0,
+	y = 0,
+	scale = 1 * 70,
+	alpha = 0.3,
+	keys = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'BACKSPACE'},
+	posY = {-75, -75, -75, 0, 0, 0, 75, 75, 75, 150, -75, 65},
+	posX = {-75, 0, 75, -75, 0, 75, -75, -0, 75, -75, 150, 150}
+}
+local groupHUD = {'Quote', 'Illus1', 'Illus2', 'Illus3', 'Illus4', 'Illus5', 'Illus6', 'TypeLine', 'WhiteLine', 'ComboString'}
+local breh = 0
+local breh2 = 0
+local canTouch = false
+local padGroup = {'numpad', 'numtext', 'numIm'}
+---------------------------------------------------------------
 local xx = 1050;
 local yy = 870;
 local xx2 = 1170;
@@ -123,6 +140,100 @@ function onCreate()
 end
 
 function onCreatePost()
+	--[MOBILE STUFF]
+	local basePos = {
+		x = ((screenWidth / 2) - (mobilePad.scale / 2)) - (70 * 0.4),
+		y = ((screenHeight / 2) - (50 / 2)) + 90
+	} --[BASE POSITION]
+	for i=1, 12 do
+		makeLuaSprite('numpad' .. i, '', mobilePad.x, mobilePad.y)
+		makeGraphic('numpad' .. i, mobilePad.scale, mobilePad.scale, 'AAAAAA')
+		setObjectCamera('numpad' .. i,'other')
+		addLuaSprite('numpad' .. i, true)
+
+		setProperty('numpad' .. i .. '.alpha', mobilePad.alpha)
+
+		setProperty('numpad' .. i .. '.x', basePos.x + mobilePad.posX[i])
+		setProperty('numpad' .. i .. '.y', basePos.y + mobilePad.posY[i])
+		--setProperty('numpad' .. i .. '.x', (screenWidth / 2) - (50 / 2))
+		--setProperty('numpad' .. i .. '.y', ((screenHeight / 2) - (50 / 2)) + 150)
+	end --[NUMPAD BUTTONS]
+	for a=1, 12 do
+		local scaleGuys = {
+			x = {1, 1, 1, 1, 1, 1, 1, 1, 1, 3.15, 0.75, 0.75},
+			y = {1, 1, 1, 1, 1, 1, 1, 1, 1, 0.73, 1.95, 1.95}
+		}
+		--[[setProperty('numpad' .. a .. '.scale.x', scaleGuys.x[a])
+		setProperty('numpad' .. a .. '.scale.y', scaleGuys.y[a])]]
+		scaleObject('numpad' .. a, scaleGuys.x[a], scaleGuys.y[a])
+	end --[NUMPAD SCALES]
+	for b= 1, 10 do
+		local PosGuys = {
+			x = 18,
+			y = 8
+		}
+		makeLuaText('numtext' .. b, '1', mobilePad.x, mobilePad.y)
+		setObjectCamera('numtext' .. b,'other')
+		addLuaText('numtext' .. b, true)
+		setProperty('numtext' .. b .. '.alpha', mobilePad.alpha)
+
+		setProperty('numtext' .. b .. '.x', basePos.x + mobilePad.posX[b])
+		setProperty('numtext' .. b .. '.y', basePos.y + mobilePad.posY[b])
+
+		setTextSize('numtext' .. b, 35)
+
+		setProperty('numtext' .. b .. '.x', getProperty('numtext' .. b .. '.x') + PosGuys.x)
+		setProperty('numtext' .. b .. '.y', getProperty('numtext' .. b .. '.y') + PosGuys.y)
+		setTextSize('numtext' .. b, 50)
+
+		local textN = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+		local get10 = {
+			x = getProperty('numtext10.x'),
+			y = getProperty('numtext10.x')
+		}
+		setTextString('numtext' .. b, textN[b])
+	end --[NUMPAD NUMBERS]
+	--------------------------------------------------------
+	--[[for c= 11, 12 do
+		local PosGuysB = {
+			x = 8,
+			y = 20
+		}
+		setProperty('numtext' .. c .. '.x', getProperty('numtext' .. c .. '.x') + PosGuysB.x)
+		setProperty('numtext' .. c .. '.y', getProperty('numtext' .. c .. '.y') + PosGuysB.y)
+		setTextSize('numtext' .. c, 45)
+	end]]
+	--------------------------------------------------------
+	for c=1, 2 do
+		local pathM = {'MobileControls/BCKSPC', 'MobileControls/ENTER'}
+		local posOverride = {
+			x = {153, 153},
+			y = {-25, 105}
+		}
+		makeLuaSprite('numIm' .. c, pathM[c], mobilePad.x, mobilePad.y)
+		addLuaSprite('numIm' .. c, true)
+		setObjectCamera('numIm' .. c, 'other')
+
+		setProperty('numIm' .. c .. '.alpha', mobilePad.alpha + 0.2)
+
+		setProperty('numIm' .. c .. '.x', basePos.x + posOverride.x[c])
+		setProperty('numIm' .. c .. '.y', basePos.y + posOverride.y[c])
+
+		scaleObject('numIm' .. c, 1.2, 1.2)
+
+		setProperty('numIm' .. c .. '.color', getColorFromHex('AAAAAAA'))
+	end --[SPECIAL KEYS]
+	setProperty('numtext10.x', getProperty('numtext10.x') + 75)
+	setProperty('numtext10.y', getProperty('numtext10.y') - 10)
+
+	--[INVI]
+	for d=1, 12 do
+		setProperty('numpad' .. d .. '.alpha', 0)
+		setProperty('numtext' .. d .. '.alpha', 0)
+		setProperty('numIm' .. d .. '.alpha', 0)
+	end
+
+-------------------------------------------------------------------------------
 	if songName == 'Defeat' then
 		makeLuaSprite('AuraGlow', 'BlackDomain/Defeat/Aura', getProperty('dad.x')+250, getProperty('dad.y')+85)
 		scaleObject('AuraGlow', 0.05, 0.05)
@@ -409,11 +520,13 @@ function onBeatHit()
 end
 
 function onUpdatePost(elapsed)
+	runHaxeCode([[
+		FlxG.mouse.visible = true;
+	]])
 	if SpecialHUD then
 		setProperty('iconP2.x', 20)
 		setProperty('iconP1.x', 1120)
 	end
-	
 	if Stop then
 		setPropertyFromClass('Conductor', 'songPosition', getPropertyFromClass('Conductor', 'songPosition') - elapsed * 1000  ) -- it is counted by milliseconds, 1000 = 1 second
 		setPropertyFromClass('flixel.FlxG', 'sound.music.time', getPropertyFromClass('Conductor', 'songPosition'))
@@ -440,8 +553,47 @@ local Flicker = false;
 
 local scoreUpdate = false;
 
+function overlaps(x, y, x2, y2, width, height)
+	--if x + width > x2 and x < x2 + width and y + height > y2 and y < y2 + height then
+	if x >= x2 and x <= x2 + width and y >= y2 and y <= y2 + height then
+	--if  x >= x2 and x <= then
+		return true
+	end
+end
+
 function onUpdate(elapsed)
-	if getPropertyFromClass('flixel.FlxG', 'keys.justPressed.ANY') and StartState == 0 then
+	--[MOBILE STUFF]
+	for i= 1, 10 do
+		if overlaps(getMouseX('other'), getMouseY('other'), getProperty('numpad' .. i .. '.x'), getProperty('numpad' .. i .. '.y'), getProperty('numpad' .. i .. '.width'), getProperty('numpad' .. i .. '.height')) and mouseClicked('left') and canTouch and StartState == 1 and getProperty('WhiteLine.alpha') == 1 and #MaxCombo < 3 then
+			--debugPrint(i)
+			setProperty('numpad' .. i .. '.alpha', 0.2)
+			--endStartState()
+			if i == 10 then
+				MaxCombo = MaxCombo..(0)
+			else
+				MaxCombo = MaxCombo..(i);  -------[CONTINUE]
+			end
+			MaxCombo = tonumber(MaxCombo);
+			MaxCombo = tostring(MaxCombo);
+			setTextString('ComboString', MaxCombo);
+			if #MaxCombo > TypeLinePrevCheck then
+				if i == 1 then
+					setProperty('TypeLine.x', getProperty('TypeLine.x')+23)
+				else
+					setProperty('TypeLine.x', getProperty('TypeLine.x')+46)
+				end
+			end
+			TypeLinePrevCheck = #MaxCombo;
+			
+			playSound('Typing'..getRandomInt(1,3), 1)
+		elseif mouseReleased('left') and canTouch then
+			--debugPrint(i)
+			setProperty('numpad' .. i .. '.alpha', mobilePad.alpha)
+		end
+	end
+------------------------------------------------------------------------------------------------
+	--[MOBILE MIXED]
+	if getPropertyFromClass('flixel.FlxG', 'keys.justPressed.ANY') and StartState == 0 or mouseClicked('left') and StartState == 0 then
 		StartState = 1;
 		doTweenAlpha('QuoteGoneAlpha', 'Quote', 0, 0.7)
 		doTweenAlpha('ContinueAlpha', 'Continue', 0, 0.7)
@@ -449,6 +601,9 @@ function onUpdate(elapsed)
 		playSound('TickTickTimeIsOver', 20, 'ticktock')
 		runTimer('Tick_tock_tick_tock', 1)
 		playSound('Task_Inprogress', 1)
+		--debugPrint('State1 Trig')
+		runTimer('tweeny', 1.5)
+		runTimer('controlS', 3)
 	end
 	if StartState == 1 and getProperty('WhiteLine.alpha') == 1 then
 		for i=1, 10 do
@@ -472,8 +627,11 @@ function onUpdate(elapsed)
 		if (keyboardJustPressed(''..Numbers[1][1]) or keyboardJustPressed(''..Numbers[1][2])) and MaxCombo == '0' then
 			setProperty('TypeLine.x', 682)
 		end
-		
-		if keyJustPressed('back') and #MaxCombo > 0 and StartState == 1 then
+		if oneTimeTrig then
+			--mobileControls()
+			oneTimeTrig = false
+		end
+		if keyJustPressed('back') and #MaxCombo > 0 and StartState == 1 or overlaps(getMouseX('other'), getMouseY('other'), getProperty('numpad11.x'), getProperty('numpad11.y'), getProperty('numpad11.width'), getProperty('numpad11.height')) and mouseClicked('left') and canTouch and #MaxCombo > 0 and StartState == 1 then
 			if tonumber(MaxCombo:sub(#MaxCombo, #MaxCombo)) == 1 then
 				setProperty('TypeLine.x', getProperty('TypeLine.x')-23)
 			else
@@ -489,9 +647,15 @@ function onUpdate(elapsed)
 			TypeLinePrevCheck = #MaxCombo;
 			
 			playSound('Typing'..getRandomInt(1,3), 1)
+
+			setProperty('numpad11.alpha', 0.2)
+		elseif mouseReleased('left') and canTouch then
+			--debugPrint(i)
+			setProperty('numpad11.alpha', mobilePad.alpha)
 		end
 		
-		if keyboardJustPressed('ENTER') and StartState == 1 then
+		if keyboardJustPressed('ENTER') and StartState == 1 or overlaps(getMouseX('other'), getMouseY('other'), getProperty('numpad12.x'), getProperty('numpad12.y'), getProperty('numpad12.width'), getProperty('numpad12.height')) and mouseClicked('left') and canTouch and StartState == 1 then
+			setProperty('numpad12.alpha', 0.2)
 			if #MaxCombo == 1 then
 				StartState = 2;
 				cancelTimer('TypeLineBlink')
@@ -541,6 +705,9 @@ function onUpdate(elapsed)
 				runTimer('KnifeGoesBruh', 0.7)
 				soundFadeOut('Ominous', 0.25, 0)
 			end
+		elseif mouseReleased('left') and canTouch then
+			--debugPrint(i)
+			setProperty('numpad12.alpha', mobilePad.alpha)
 		end
 	end
 	
@@ -681,6 +848,17 @@ function endStartState()
 	cancelTween('OverlayForStartStateAlphaPulse')
 	
 	soundFadeOut('Ominous', 0.75, 0)
+
+	--[MOBILE STUFF]
+	for i=1, 12 do
+		doTweenAlpha('tweenG' .. i, 'numpad' .. i, 0, 0.75)
+	end
+	for a=1, 10 do
+		doTweenAlpha('tweenH' .. a, 'numtext' .. a, 0, 0.75)
+	end
+	for b=1, 2 do
+		doTweenAlpha('tweenI' .. b, 'numIm' .. b, 0, 0.75)
+	end
 end
 
 local PunishingQuote = {
@@ -692,6 +870,27 @@ local PunishingQuote = {
 }
 
 function onTimerCompleted(tag, loops, loopsLeft)
+	--[MOBILE STUFF]
+	if tag == 'delayMobileHUD' then
+		local quotePY = getProperty('Quote.y')
+		for i= 2, #groupHUD do
+			local yS = getProperty(groupHUD[i] .. '.y')
+			doTweenY('mobileshit' .. i, groupHUD[i], yS - 180, 1, 'sineInOut')
+		end
+		--[[for a= 5, 7 do
+			local yS2 = getProperty(groupHUD[a] .. '.y')
+			doTweenY('mobileshit' .. a, groupHUD[a], yS2 - 100, 1, 'sineInOut')
+		end]]
+		doTweenY('mobileshit1', groupHUD[1], quotePY - 180, 1, 'sineInOut')
+	end
+	local oneTime = true
+	if tag == 'tweeny' and StartState == 1 and oneTime then
+		oneTime = false
+		mobileControls('tweenHUD')
+	end
+	if tag == 'controlS' and StartState == 1 then
+		mobileControls('start2Tween')
+	end
 	if tag == 'DIE' then
 		Stop = false;
 		setPropertyFromClass('PlayState', 'instance.generatedMusic', true)
@@ -704,7 +903,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	
 	if tag == 'Continue' then
 		if StartState == 0 then
-			makeLuaText('Continue', 'Press any button to Continue', 1300, 0, 700)
+			makeLuaText('Continue', 'Press any button/Tap the screen to Continue', 1300, 0, 700)
 			setTextSize('Continue', 20)
 			setTextColor('Continue', 'C00000')
 			setTextAlignment('Continue', 'center')
@@ -726,6 +925,9 @@ function onTimerCompleted(tag, loops, loopsLeft)
 
 			doTweenY('ContinueY', 'Continue', 650, 3, 'sineOut')
 			doTweenAlpha('ContinueAlpha', 'Continue', 0.7, 2.5)
+
+
+			--debugPrint('SPECIAL BUTS')
 		end
 	end
 	
@@ -817,7 +1019,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'Tick_tock_tick_tock' and tonumber(getTextString('TimeLeft')) > 0 and StartState == 1 then
 		setTextString('TimeLeft', tostring(tonumber(getTextString('TimeLeft'))-1))
 		setTextString('TimeLeftShadow', getTextString('TimeLeft'))
-		-- debugPrint(tonumber(getTextString('TimeLeft')))
+		-- --debugPrint(tonumber(getTextString('TimeLeft')))
 		if tonumber(getTextString('TimeLeft')) == 7 then
 			doTweenAlpha('TimeLeftText', 'TimeLeft', 0.6, 6)
 		end
@@ -843,6 +1045,13 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onTweenCompleted(tag)
+	--[MOBILE STUFF]
+	if tag == 'tweenG1' then
+		canTouch = false
+	end
+	if tag == 'tweenD1' then
+		canTouch = true
+	end
 	if tag == 'ByeAuraGlow' then
 		removeLuaSprite('AuraGlowAlpha', true)
 	end
@@ -865,7 +1074,7 @@ function onTweenCompleted(tag)
 		addLuaSprite('WhiteLine')
 		doTweenAlpha('WhiteLineAlpha', 'WhiteLine', 1, 0.7)
 		-- screenCenter('WhiteLine')
-		-- debugPrint(getProperty('WhiteLine.x')..' '..getProperty('WhiteLine.y'))
+		-- --debugPrint(getProperty('WhiteLine.x')..' '..getProperty('WhiteLine.y'))
 		
 		makeLuaSprite('TypeLine', '', 636, 405)
 		makeGraphic('TypeLine', 8, 90, 'FFFFFF')
@@ -874,7 +1083,7 @@ function onTweenCompleted(tag)
 		addLuaSprite('TypeLine')
 		runTimer('TypeLineBlink', 0.5, 0)
 		-- screenCenter('TypeLine')
-		-- debugPrint(getProperty('TypeLine.x')..' '..getProperty('TypeLine.y'))
+		-- --debugPrint(getProperty('TypeLine.x')..' '..getProperty('TypeLine.y'))
 		
 		doTweenAlpha('Illus1Alpha', 'Illus1', 1, 0.75)
 		doTweenAlpha('Illus4Alpha', 'Illus4', 1, 0.75)
@@ -958,4 +1167,28 @@ end
 
 function onDestroy()
 	setPropertyFromClass('HealthIcon', 'iconFPS', 17)
+end
+
+function mobileControls(type)
+	--debugPrint('MOBILE CONTROLS TRIGG')
+	if type == 'tweenHUD' and StartState == 1 then
+		runTimer('delayMobileHUD', 0.5)
+	end
+	if type == 'start2Tween' then
+		for i=1, 12 do
+			setProperty('numpad' .. i .. '.y', getProperty('numpad' .. i .. '.y') + 50)
+			doTweenY('tweenA' .. i, 'numpad' .. i, getProperty('numpad' .. i .. '.y') - 50, 2, 'sineOut')
+			doTweenAlpha('tweenD' .. i, 'numpad' .. i, mobilePad.alpha, 2, 'sineOut')
+		end
+		for a=1, 10 do
+			setProperty('numtext' .. a .. '.y', getProperty('numtext' .. a .. '.y') + 50)
+			doTweenY('tweenB' .. a, 'numtext' .. a, getProperty('numtext' .. a .. '.y') - 50, 2, 'sineOut')
+			doTweenAlpha('tweenE' .. a, 'numtext' .. a, mobilePad.alpha, 2, 'sineOut')
+		end
+		for b=1, 2 do
+			setProperty('numIm' .. b .. '.y', getProperty('numIm' .. b .. '.y') + 50)
+			doTweenY('tweenC' .. b, 'numIm' .. b, getProperty('numIm' .. b .. '.y') - 50, 2, 'sineOut')
+			doTweenAlpha('tweenF' .. b, 'numIm' .. b, mobilePad.alpha + 0.2, 2, 'sineOut')
+		end
+	end
 end
