@@ -1,9 +1,6 @@
 # FNF Vs Human Imposter Android Port
 Friday Night Funkin' Vs Imposters but Human Edition
 
-## This is Official Android Port Of This Mod
-![Proof Of That lmao](https://github.com/MaysLastPlaysThings/FNF-Vs-Human-Imposter/blob/main/susport.jpg)
-
 # Android Port Crew
 * [MaysLastPlay](https://youtube.com/@MaysLastPlay) - Main Porter/Port Owner
 * [MarioMaster](https://youtube.com/@MarioMaster39) - Second Porter
