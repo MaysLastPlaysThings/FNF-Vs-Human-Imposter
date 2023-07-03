@@ -13,5 +13,5 @@ Friday Night Funkin' Vs Imposters but Human Edition
 * [MAJigsaw](https://youtube.com/@m.a.jigsaw7297) - AndroidTools Creator
 * [EmirPlays](https://youtube.com/@EmirPlaysFNF) - asked Bluebirds about making that port official
 
-# Port Progress
-* done
+# Port Progress:
+* Hotfixing
