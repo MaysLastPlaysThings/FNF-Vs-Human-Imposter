@@ -523,6 +523,11 @@ function onUpdatePost(elapsed)
 	runHaxeCode([[
 		FlxG.mouse.visible = true;
 	]])
+	if StartState == 0 and StartState == 1 then
+	runHaxeCode([[
+			mobileControls.visible = false;
+		]])
+	end
 	if SpecialHUD then
 		setProperty('iconP2.x', 20)
 		setProperty('iconP1.x', 1120)
@@ -1091,6 +1096,9 @@ function onTweenCompleted(tag)
 		runTimer('Continue', 3.5)
 	end
 	if tag == 'TypeLineAlphaGone' and StartState == 2 then
+   runHaxeCode([[
+			mobileControls.visible = true;
+		]])
 		allowCountdown = true;
 		startCountdown();
 		doTweenAlpha('BlackScreenAlpha', 'BlackScreen', 0, 1.5)
