@@ -25,7 +25,7 @@
 			"text": "you guys just love to foil my plans huh.."
 		},
 		{
-			"sound": "ui",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
@@ -57,7 +57,7 @@
 			"text": "so easy win for me i guess"
 		},
 		{
-			"sound": "ui",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
