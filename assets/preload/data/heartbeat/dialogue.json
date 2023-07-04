@@ -17,7 +17,7 @@
 			"text": "i wonder when Ill finally make a friend..."
 		},
 		{
-			"sound": "bf_dtext",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
@@ -33,7 +33,7 @@
 			"text": "OMGG!!! hiiiiii!! -waves at you-"
 		},
 		{
-			"sound": "gf_dtext",
+			"sound": "Gf_dtext",
 			"speed": 0.05,
 			"portrait": "gf-im",
 			"boxState": "normal",
@@ -41,7 +41,7 @@
 			"text": "oh um he wasnt talking to you"
 		},
 		{
-			"sound": "gf_dtext",
+			"sound": "Gf_dtext",
 			"speed": 0.05,
 			"portrait": "gf-im",
 			"boxState": "normal",
@@ -57,7 +57,7 @@
 			"text": "hiii wanna be my friends pleeeasde pllsee plelessseee"
 		},
 		{
-			"sound": "bf_dtext",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
@@ -73,7 +73,7 @@
 			"text": ":)"
 		},
 		{
-			"sound": "bf_dtext",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
@@ -89,7 +89,7 @@
 			"text": "<:)"
 		},
 		{
-			"sound": "bf_dtext",
+			"sound": "Bf_dtext",
 			"speed": 0.05,
 			"portrait": "bf-im",
 			"boxState": "normal",
